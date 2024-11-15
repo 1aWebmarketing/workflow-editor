@@ -79,7 +79,7 @@ class WorkflowEditor extends Component
         }
     }
 
-    public function openActionSettings(int $id)
+    public function openElementSettings(int $id)
     {
         foreach($this->elements as $element)
         {
@@ -89,5 +89,10 @@ class WorkflowEditor extends Component
             }
         }
         $this->elementSettingsVisible = true;
+    }
+
+    public function closeElementSettings()
+    {
+        $this->elementSettingsVisible = false;
     }
 }

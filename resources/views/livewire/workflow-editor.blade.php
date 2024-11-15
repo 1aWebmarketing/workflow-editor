@@ -15,7 +15,7 @@
             endswitch;
             @endphp
 
-            <div wire:key="element-{{ $element['id'] }}" wire:click="openActionSettings({{ $element['id'] }})" class="border rounded-xl shadow p-2 bg-white border-gray-200
+            <div wire:key="element-{{ $element['id'] }}" wire:click="openElementSettings({{ $element['id'] }})" class="border rounded-xl shadow p-2 bg-white border-gray-200
                 border-2 hover:border-gray-300 hover:cursor-pointer">
                 <div class="{{ $bgColor }} flex gap-2 items-center rounded mb-2 p-1 min-w-[{{ $element['width'] }}]">
                     <svg width="1.5em" height="1.5em" viewBox="0 0 71 71" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -92,6 +92,8 @@
     </div>
 
     <div :class="elementSettingsVisible ? 'left-0' : 'left-[-400px]'" class="fixed top-0 bottom-0 bg-[#f1fffe] shadow w-[400px] transition-all duration-700">
+        <div wire:click="closeElementSettings" class="float-right text-xl border rounded-full p-1 mr-2 hover:cursor-pointer bg-black text-white flex items-center justify-center">X</div>
+
         <p class="text pl-2 pt-3 text-gray-500 font-bold">Element properties</p>
         <h2 class="text-xl pl-2">{{ $currentElementSetting['name'] ?? '' }}</h2>
 

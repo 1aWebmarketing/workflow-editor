@@ -1,21 +1,46 @@
 <p align="center"><a href="https://1awebmarketing.de" target="_blank"><img src="https://1awebmarketing.de/wp-content/uploads/2024/11/workflow-editor-livewire.png" width="100%" alt="LiveWire Workflow Editor"></a></p>
 
-## About workflow-editor
 
-This LiveWire Element is just a basic workflow-editor mockup to get you started. Add Elements and click on an element to open the settings.
+# Workflow Editor: Chainable Triggers and Actions in Laravel Livewire  
 
-## Learning Laravel
+## Description  
+This project is a **workflow editor** built using **Laravel Livewire**, enabling users to create and manage workflows by chaining together **triggers** and **actions** in a structured sequence.  
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+- **Add Elements**: Click the `+` button to add workflow elements like triggers and actions.  
+- **Element Settings**: Click on any element to open its settings panel and configure the element's properties dynamically.  
+- **Interactive UI**: Powered by Laravel Livewire, the interface is responsive and seamless without requiring full-page reloads.  
 
-You may also try the [Laravel Bootcamp](https://bootcamp.laravel.com), where you will be guided through building a modern Laravel application from scratch.
+## Features  
+- **Chaining**: Create workflows by adding elements sequentially in a clear, structured format.  
+- **Configurable Settings**: Each element has customizable settings accessible through an intuitive panel.  
+- **Live Updates**: Real-time interaction with no full-page refreshes, leveraging Livewire’s reactive capabilities.  
+- **Extensible**: Add new triggers and actions to customize the workflow editor for your specific use case.  
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+## Use Cases  
+- Automating workflows for **task management** or **event-driven systems**.  
+- Building custom **business logic flows**, such as sending notifications, modifying records, or handling integrations.  
+- Empowering users to create visual workflows in your Laravel applications.  
 
-## Code of Conduct
+## Installation  
+1. Clone the repository:  
+   ```bash
+   git clone https://github.com/1aWebmarketing/workflow-editor
+   cd workflow-editor
+   ```  
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+2. Install dependencies:  
+   ```bash
+   composer install  
+   npm install && npm run dev  
+   ```  
 
-## License
+3. Serve the application:  
+   ```bash
+   php artisan serve  
+   ```  
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+## Contributions  
+Feel free to contribute by submitting pull requests, reporting bugs, or suggesting new features!  
+
+## License  
+This project is licensed under the [MIT License](LICENSE).  
