@@ -55,7 +55,8 @@ class WorkflowEditor extends Component
 
     public function render()
     {
-        return view('livewire.workflow-editor');
+        return view('livewire.workflow-editor')
+            ->layout('layouts.app');
     }
 
     public function toggleSidebar()

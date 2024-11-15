@@ -1,7 +1,6 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Livewire\WorkflowEditor;
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', WorkflowEditor::class);
